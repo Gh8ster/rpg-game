@@ -1,1 +1,32 @@
+.text {
+    font-family: "Jersey 20", "monospace";
+    color: white;
+    user-select: none;
+}
 
+.button {
+    color: #fff;
+    background-color: #090909;
+    padding: 15px 40px 15px 40px;
+    margin: 10px;
+    font-size: 25px;
+    font-family: "Jersey 20", "monospace";
+    border: 0;
+    box-shadow: 0 5px #ffffff, 0 -5px #ffffff, 5px 0px #ffffff, -5px 0px #ffffff, 0px 10px #00000038, 5px 5px #00000038, -5px 5px #00000038, inset 0px 5px #ffffff36 ;
+    cursor: pointer;
+}
+.button:active {
+    color: #575757;
+    transform: translateY(5px);
+    background-color: #000000;
+    box-shadow: 0px 5px #444444, 0px -5px #444444, 5px 0px #444444, -5px 0px #444444,inset 0px 5px #00000038;
+}
+.button:hover {
+    background-color: #000000;
+}
+.scrollable {
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-color: #9a9a9a #1c1c1c;
+    scrollbar-width: thin;
+}
