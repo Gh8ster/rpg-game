@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title id="title">.</title>
+
+    <!--Style-->
+    <link rel="stylesheet" href="css/init.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/intro.css">
+    <link rel="stylesheet" href="css/mainMenu.css">
+    <link rel="stylesheet" href="css/loadMenu.css">
+    <link rel="stylesheet" href="css/newGame.css">
+
+    <!--Init scripts-->
+    <script src="js/init.js"></script>
+    <script src="js/globals.js"></script>
+</head>
+<body>
+<!--Intro-->
+<p id="introT" class="text gameStart"></p>
+<div id="intro">
+    <img src="img/spacebar.png" alt="Press the space bar." title="Press the space bar.">
+</div>
+
+<!--Main menu-->
+<div id="mainMenu">
+    <p class="text mainMenuText">Game title</p>
+    <button onclick="continueGame()" class="mmb button" id="continue">Continue</button>
+    <button onclick="newGame()" class="mmb button">New Game</button>
+    <button onclick="loadGame()" class="mmb button">Load Game</button>
+    <button onclick="settings()" class="mmb button">Settings</button>
+    <button onclick="credits()" class="mmb button">Credits</button>
+</div>
+
+<div id="newMenu" class="menu">
+    <p class="text newGameText">Are you sure you want to start a new game?</p>
+    <div class="buttonRow">
+        <button onclick="startNewGame()" class="button">Yes</button>
+        <button onclick="backtmm()" class="button">No</button>
+    </div>
+</div>
+<div id="charCreation" class="menu">
+    <div id="charName">
+        <p class="text">What is your name?</p>
+        <div id="nameInput">
+            <input type="text" name="text" autocomplete="off" required id="inputBox" class="text inputText" maxlength="22">
+            <label for="inputBox" class="label-name text">
+                <span class="content-name">Your Text</span>
+            </label>
+        </div>
+        <button class="button" onclick="confirmName()">Confirm</button>
+    </div>
+</div>
+<div id="assignAttributes" class="menu">
+    <p class="text attrT">You feel the threads of fate being woven... roll your destiny and assign your strengths.</p>
+    <div></div>
+    <div id="dicerolls" class="diceroll"></div>
+    <div></div>
+    <div></div>
+</div>
+
+<div id="loadMenu" class="scrollable">
+    <button id="trashBtn" class="trash-toggle button" onclick="">🗑️</button>
+</div>
+
+<div id="settMenu">
+
+</div>
+
+<div id="cred">
+
+</div>
+
+<!--Back button-->
+<button onclick="backtmm()" id="backbtn" class="button"><</button>
+
+<script src="js/intro.js"></script>
+<script src="js/mmbFunctions.js"></script>
+<script src="js/saves.js"></script>
+<script src="js/newGame.js"></script>
+</body>
+</html>
