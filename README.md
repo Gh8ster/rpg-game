@@ -24,4 +24,4 @@ As of 27.5.2025.
 | Item reforging                     | 0%             |
 | Story                              | 0%             |
 | Quests                             | 0%             |
-| **Total**                          | 18.75%         |
+| **Total**                          | 8%         |
